@@ -34,34 +34,3 @@
 6.8.2 'exit' = comando utilizado para sair;
 6.9 'cat nome.arquivo' = exibe na tela o conteúdo na tela;
 6.10 'mv nome.arquivo nome.arquivo.alterado' = comando utilizado para alterar o nome do arquivo;
-
-7. comandos stage (staging):
-7.1 'git status' = comando utilizado para verificar como está a situação do arquivo;
-7.2 'git add nome.arquivo' ou 'git add .' = comandos utilizados para adicionar arquivos;
-7.3 'git rm --cached nome.arquivo' = comando utilizado para remover o arquivo; 
-
-8. comandos para fazer commit (commited):
-8.1 'git commit -m "nome.commit"' = comando para criar o commit;
-8.2 'git log' = comando permite puxar o histórico de todos os commit feitos;
-8.3 'git log --oneline' = mesmo comando que o 'git log', porém de uma forma mais compacta;
-
-9. comandos para desfazer commit (commited)
-9.1 'git checkout id.commit' = permite voltar um ou mais commit provisoriamente;
-9.1.1 'git checkout main' = volta para o último commit;
-9.2 'git revert id.commit' = apagada o commit do projeto, porém o histórico continua no git;
-9.3 'git reset' = comando que apaga o commit e o histórico do git, porém os arquivos do projeto continua disponível para fazer um novo commit; 
-9.3.1 'git reset id.commit --hard' = apaga todo commit, histórico e arquivo do git e projeto;
-
-10. comando para ignorar arquivo;
-10.1 'touch .gitignore' = cirar um arquivo .gitignore;
-10.2 colocar o 'nome.arquivo' (que deseja que o git ignore) dentro do arquivo .gitignore;
-
-11. criando uma nova branch:
-11.1 'git branch' = lista todas as branch que tem disponível no repositório;
-11.2 'git branch nome.branch' = cria uma nova branch;
-11.3 'git checkout nome.branch' = altera para o branch desejado;
-11.4 'git branch -D nome.branch' = deleta a branch;
-
-12. fundindo as branch:
-12.1 'git checkout nome.branchDestino' = alterar para a branch destino;
-12.2 'git merge nome.branch2' = realiza o vínculo da branch secundária, para a branch destino;
